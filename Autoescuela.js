@@ -16,9 +16,9 @@ conexion.connect(function(err) {
         console.log('Conexion exitosa !!!'); 
     } 
 }); 
-app.get('/', function(req, res) { 
+/*app.get('/', function(req, res) { 
     res.send('Ruta de servicios'); 
-}); 
+});*/ 
 ///////////////////////////////////////////////////////TABLA USUARIOS///////////////////////////////////////////////////////
 //GET
 app.get('/usuarios', function(req, res) {
