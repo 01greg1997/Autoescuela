@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Servicios - Consultorio</title>
+</head>
+
+<body>
+    <form method="post" id="formularioData">
+        <h1>Agregar Servicio</h1>
+
+        <label for="Nombre_Servicio">Nombre:</label>
+        <input id="Nombre_Servicio" type="text" required>
+
+        <label for="Descripcion">Descripción:</label>
+        <input id="Descripcion" type="text" required>
+
+        <label for="Nivel_Complejidad">Complejidad:</label>
+        <select id="Nivel_Complejidad">
+            <option value="bajo">Bajo</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+        </select>
+
+        <label for="Costo">Costo:</label>
+        <input id="Costo" type="number" step="0.01" required>
+
+        <label for="Activo">Activo:</label>
+        <select id="Activo">
+            <option value="true">Sí</option>
+            <option value="false">No</option>
+        </select>
+
+        <button type="submit">Agregar</button>
+    </form>
+    <script src="serviciospost.js"></script>
+</body>
+
+</html>

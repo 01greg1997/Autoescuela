@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Servicio - Consultorio</title>
+</head>
+
+<body>
+    <form method="post" id="formularioActualizar">
+        <h1>Actualizar Servicio</h1>
+
+        <label for="CODServicio">ID del Servicio:</label>
+        <input id="CODServicio" type="text" required>
+
+        <label for="Nombre_Servicio">Nombre:</label>
+        <input id="Nombre_Servicio" type="text" required>
+
+        <label for="Descripcion">Descripción:</label>
+        <input id="Descripcion" type="text" required>
+
+        <label for="Nivel_Complejidad">Complejidad:</label>
+        <select id="Nivel_Complejidad">
+            <option value="bajo">Bajo</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+        </select>
+
+        <label for="Costo">Costo:</label>
+        <input id="Costo" type="number" step="0.01" required>
+
+        <label for="Activo">Activo:</label>
+        <select id="Activo">
+            <option value="true">Sí</option>
+            <option value="false">No</option>
+        </select>
+
+        <button type="submit">Actualizar</button>
+    </form>
+    <script src="servicioput.js"></script>
+</body>
+
+</html>
